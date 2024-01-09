@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle da Distribuição de Merenda</title>
+    <style>
+        body {
+            background-color: rgb(209, 208, 208);
+        }
+        .form-container {
+            transform: scale(1.2);
+            max-width: 90vw;
+            max-height: 90vh;
+        }
+        
+        form {
+            font-size: 1.2em;
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+        
+        input {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 1em;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head> 
+<body>
+    <div class="content">
+        <div id="sc">
+            <form>
+                <label for="ra">RA:</label><br>
+                <input type="password" id="ra" name="ra" required><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

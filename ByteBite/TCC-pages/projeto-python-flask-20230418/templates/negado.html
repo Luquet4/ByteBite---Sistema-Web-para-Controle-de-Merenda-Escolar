@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-Hc12uL+5G5K5J6ez9sDg9L/1p0JrbEKMSyVLb+T34nK3Z4LIZgTZRnG2I9S9nLvS" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <meta http-equiv="refresh" content="2.5;/start"/>
+    <title>NEGADO!</title>
+    <style>
+        body {
+            background-color: rgb(204, 0, 0);
+            margin-top: 0;
+            font-family: 'Lilita One', cursive;
+            font-size: 16px;
+        }    
+
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: transparent;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+            font-family: 'Lilita One', cursive;
+            font-size: 3em;
+            color: #ffffff;
+            margin: auto; 
+        }
+
+        .popup h2 {
+            font-size: 2.5em;
+            margin-top: 5%;
+        }
+
+        .popup p {
+            font-size: 1em;
+            margin: 0 0;
+        }
+
+        .popup img {
+            max-width: 50%;
+            height: auto;
+        }
+        @media only screen and (max-width: 768px) {
+            .popup {
+                font-size: 1.5em;
+            }
+            .popup h2 {
+                font-size: 1.8em;
+            }
+            .popup p {
+                font-size: 1.3em;
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            .popup {
+                font-size: 1.2em;
+            }
+            .popup h2 {
+                font-size: 1.5em;
+            }
+            .popup p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>   
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">  
+          <div class="popup">
+            <img src="{{url_for('static', filename='img/denied.png')}}" alt="" class="img-fluid">
+            <h2>MERENDA JÁ RETIRADA!</h2>
+            <p>Sua merenda já foi RETIRADA!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>  
+</html>
